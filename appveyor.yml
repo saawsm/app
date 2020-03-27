@@ -59,9 +59,9 @@ deploy:
   - provider: GitHub
     release: $(GitVersion_SemVer)
     api_key:
-      secure: 
+      secure: ifXlmVS0EJd5CrTa4LZrXpmCA1Ms84qO1shbmOQyrakTuwZH8yeC65+TrgLd7kKE
     artifact: 'App_%CONFIGURATION%-%PLATFORM%'
     on:
-      branch: master
+      branch: /v\d\.\d\.\d/
       configuration: Release
       APPVEYOR_REPO_TAG: true
