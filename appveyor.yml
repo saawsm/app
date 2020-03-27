@@ -58,7 +58,7 @@ artifacts:
 deploy:
   - provider: GitHub
     release: $(GitVersion_SemVer)
-    api_key:
+    auth_token:
       secure: ifXlmVS0EJd5CrTa4LZrXpmCA1Ms84qO1shbmOQyrakTuwZH8yeC65+TrgLd7kKE
     artifact: 'App_%CONFIGURATION%-%PLATFORM%'
     on:
